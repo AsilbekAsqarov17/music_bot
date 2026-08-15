@@ -1,0 +1,10 @@
+services:
+  telegram-music-bot:
+    build: .
+    container_name: music_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./downloads:/app/downloads
+      - ./temp_audio:/app/temp_audio

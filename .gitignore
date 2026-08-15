@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables & secrets (CRITICAL)
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Temporary audio files & user downloads
+temp_audio/
+downloads/
+*.ogg
+*.wav
+*.mp3
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.dockerignore
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Whisper / HuggingFace model cache (if downloaded locally)
+models/
+.cache/
