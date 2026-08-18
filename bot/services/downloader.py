@@ -25,9 +25,10 @@ async def download_track_mp3(url_or_id: str, output_dir: str = "downloads") -> s
         'no_warnings': True,
         'extractor_args': {
             'youtube': {
-                'player_client': ['android', 'web'],  # Reduced client list for quicker handshake
+                'player_client': ['ios', 'android', 'mweb'],
+                'player_skip': ['webpage', 'configs'],
             }
-        },
+        }
     }
 
     if os.path.exists("cookies.txt"):
